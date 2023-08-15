@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/accessibility.js"></script>
+
+    <title>BOSNIA MAP</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav-1">STICKY</nav>
+      <nav class="nav-2">NAVBAR</nav>
+    </header>
+
+    <section class="before-zero">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores
+        impedit amet! A illo officia non earum laudantium, nemo, voluptatum sit
+        illum quo nam magnam? Accusamus dolores aperiam in, ipsam quidem
+        repudiandae? Quod, nam explicabo est cumque pariatur consequuntur,
+        aspernatur commodi voluptatem perspiciatis, ducimus amet sit minus fuga
+        adipisci dignissimos.
+      </p>
+    </section>
+    <section class="before-zero-again smooth">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio maiores
+        impedit amet! A illo officia non earum laudantium, nemo, voluptatum sit
+        illum quo nam magnam? Accusamus dolores aperiam in, ipsam quidem
+        repudiandae? Quod, nam explicabo est cumque pariatur consequuntur,
+        aspernatur commodi voluptatem perspiciatis, ducimus amet sit minus fuga
+        adipisci dignissimos.
+      </p>
+    </section>
+    <div class="slides-wrapper">
+      <section id="section0" class="section">
+        <div class="slide--0-header">
+          <h2>MAP OF BiH CITIES</h2>
+        </div>
+
+        <div id="map1" class="slide--0-map map"></div>
+      </section>
+
+      <div class="sticky-map">
+        <div>
+          <section id="section1" class="section stickySection" itemid="test">
+            <div class="slide--1-content content">
+              <h2 class="slide__header">Sarajevo</h2>
+              <h5 class="slide__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                minus, praesentium, illum mollitia facere cupiditate quod rem
+                voluptas saepe enim voluptatum?
+              </h5>
+              <div class="slide-img">
+                <img class="dummy-img" src="img/Sarajevo.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <section id="section2" class="section stickySection">
+            <div class="slide--2-content content">
+              <h2 class="slide__header">Mostar</h2>
+              <h5 class="slide__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                minus, praesentium, illum mollitia facere cupiditate quod rem
+                voluptas saepe enim voluptatum?
+              </h5>
+              <div class="slide-img">
+                <img class="dummy-img" src="img/mostar.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <section id="section3" class="section stickySection">
+            <div class="slide--3-content content">
+              <h2 class="slide__header">Tuzla</h2>
+              <h5 class="slide__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                minus, praesentium, illum mollitia facere cupiditate quod rem
+                voluptas saepe enim voluptatum?
+              </h5>
+              <div class="slide-img">
+                <img class="dummy-img" src="img/tuzla.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <section id="section4" class="section stickySection">
+            <div class="slide--4-content content">
+              <h2 class="slide__header">Banja Luka</h2>
+              <h5 class="slide__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                minus, praesentium, illum mollitia facere cupiditate quod rem
+                voluptas saepe enim voluptatum?
+              </h5>
+              <div class="slide-img">
+                <img class="dummy-img" src="img/banja luka.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <section id="section5" class="section stickySection">
+            <div class="slide--5-content content">
+              <h2 class="slide__header">Bihac</h2>
+              <h5 class="slide__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                minus, praesentium, illum mollitia facere cupiditate quod rem
+                voluptas saepe enim voluptatum?
+              </h5>
+              <div class="slide-img">
+                <img class="dummy-img" src="img/bihac.jpeg" alt="" />
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="map-wrapper">
+          <div id="map2" class="map"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dots">
+      <div class="dot" data-section="section0"></div>
+      <div class="dot" data-section="section1"></div>
+      <div class="dot" data-section="section2"></div>
+      <div class="dot" data-section="section3"></div>
+      <div class="dot" data-section="section4"></div>
+      <div class="dot" data-section="section5"></div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <script defer src="constants.js"></script>
+    <script defer src="map.js"></script>
+    <script defer src="dots.js"></script>
+  </body>
+</html>

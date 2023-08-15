@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.9;
+  background-color: aliceblue;
+}
+
+nav {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.before-zero,
+.before-zero-again {
+}
+
+.section {
+  scroll-snap-align: start;
+}
+
+#section0 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20rem;
+}
+
+@media (max-width: 1020px) {
+  #section0 {
+    padding-top: 2rem;
+    height: 50rem;
+  }
+}
+
+/* MAP CONTAINER */
+
+#map1 {
+  height: 60rem;
+  width: 50rem;
+}
+
+@media (max-width: 1020px) {
+  #map1 {
+    max-height: 60rem;
+    max-width: 100%;
+  }
+}
+
+#map2 {
+  padding: 5rem;
+  height: 100%;
+}
+
+.sticky-map {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  padding: 0 4rem 0 4rem;
+}
+
+@media (max-width: 1020px) {
+  .sticky-map {
+    grid-template-columns: 1fr;
+  }
+}
+
+.stickySection {
+  height: 100vh;
+  padding: 10rem 6rem 0 6rem;
+}
+
+@media (max-width: 1020px) {
+  .stickySection {
+    height: 25%;
+    padding: 0;
+  }
+}
+
+.dummy-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10rem;
+  gap: 4rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 1020px) {
+  .content {
+    padding-top: 0;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+.map-wrapper {
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1020px) {
+  .map-wrapper {
+    display: none;
+  }
+}
+
+/* DOTS */
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+  background-color: #000;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+}
+
+.dots {
+  position: fixed;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+@media (max-width: 1020px) {
+  .dots {
+    display: none;
+  }
+}
+
+.dots.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.map {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+}
+
+.highcharts-button,
+.highcharts-legend,
+.highcharts-credits {
+  display: none;
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+
+.nav-1 {
+  height: 49px;
+  background-color: red;
+}
+
+.nav-2 {
+  height: 72px;
+  background-color: grey;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+.before-zero {
+  height: 100vh;
+  font-size: 3rem;
+  padding: 20rem 3rem 0 3rem;
+  background-color: #96b6c5;
+  text-align: center;
+}
+
+.before-zero-again {
+  height: 50vh;
+  font-size: 3rem;
+  padding: 10rem 3rem 0 3rem;
+  background-color: #adc4ce;
+  text-align: center;
+}
+
+.before-zero p {
+  width: 80rem;
+  margin: auto;
+}
+.before-zero-again p {
+  width: 120rem;
+  margin: auto;
+}
+
+/* ************************************************************ */
